@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | VowVibes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"><!-- Add Bootstrap Icons CDN in <head> if not already present -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo-wrapper">
+                    <div class="logo">VowVibes</div>
+                    <div class="logo-tagline">Swipe. Search. Celebrate. </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="search-results.html">Wedding Vendors</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Wedding Tips</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bottom Navigation (Mobile/Tablet) -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav__item nav-home">
+            <span class="bottom-nav__icon"><i class="bi bi-house-door-fill"></i></span>
+            <span class="bottom-nav__label">Home</span>
+        </a>
+        <a href="search-results.html" class="bottom-nav__item nav-vendors">
+            <span class="bottom-nav__icon"><i class="bi bi-gem"></i></span>
+            <span class="bottom-nav__label">Vendors</span>
+        </a>
+        <a href="gallery.html" class="bottom-nav__item nav-gallery">
+            <span class="bottom-nav__icon"><i class="bi bi-images"></i></span>
+            <span class="bottom-nav__label">Gallery</span>
+        </a>
+        <a href="faqs.html" class="bottom-nav__item nav-faqs">
+            <span class="bottom-nav__icon"><i class="bi bi-question-circle-fill"></i></span>
+            <span class="bottom-nav__label">FAQs</span>
+        </a>
+        <a href="contact.html" class="bottom-nav__item nav-contact">
+            <span class="bottom-nav__icon"><i class="bi bi-telephone-fill"></i></span>
+            <span class="bottom-nav__label">Contact</span>
+        </a>
+    </nav>
+    <!-- ...existing code... -->
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">Home</a> &gt; <span>Contact Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container contact-section">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Address:</strong> 2nd Floor, VowVibes Office, Andheri West, Mumbai, Maharashtra 400053</p>
+                    <p><strong>Email:</strong> <a href="mailto:connect@vowvibes.in">connect@vowvibes.in</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+                    <h3 class="mt-4">Working Hours</h3>
+                    <ul style="list-style:none; padding-left:0;">
+                        <li>Monday - Friday: 10:00 AM - 7:00 PM</li>
+                        <li>Saturday: 11:00 AM - 4:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Type your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning px-4">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact-map mt-5">
+            <iframe src="https://www.google.com/maps?q=Andheri+West,+Mumbai,+Maharashtra&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VowVibes</h3>
+                    <p>Your trusted partner in creating unforgettable wedding celebrations. Connecting couples with authentic vendors who understand tradition and excellence.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/>" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="http://linkedin.com/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>For Couples</h3>
+                    <p><a href="search-results.html">Find Wedding Vendors</a></p>
+                    <p><a href="blog-single.html">Wedding Planning Guide</a></p>
+                    <p><a href="blog-single.html">Real Weddings</a></p>
+                    <p><a href="wedding-budget-calculator.html">Budget Calculator</a></p>
+                    <p><a href="blog-single.html">Wedding Checklist</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>For Vendors</h3>
+                    <p><a href="signup.html">Join VowVibes</a></p>
+                    <p><a href="signin.html">Vendor Login / Signup</a></p>
+                    <p><a href="about-us.html">Why VowVibes</a></p>
+                    <p><a href="vendor-signup.html">Vendor Success Stories</a></p>
+                    <p><a href="vendor-signup.html">Vendor Resources</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p><a href="Privacy-Policy.html">Privacy Policy</a></p>
+                    <p><a href="terms-of-service.html">Terms of Service</a></p>
+                    <p><i class="bi bi-envelope-fill"></i> connect@vowvibes.in</p>
+                    <p><i class="bi bi-telephone-fill"></i> +91 98765 43210</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 VowVibes. All rights reserved. Made with ❤️ for Indian weddings.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 600, // ms, matches your .6s
+            easing: 'ease',
+            once: true
+        });
+    </script>
+</body>
+</html>

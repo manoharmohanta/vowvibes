@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results | VowVibes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add Bootstrap Icons CDN in <head> if not already present -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo-wrapper">
+                    <div class="logo">VowVibes</div>
+                    <div class="logo-tagline">Swipe. Search. Celebrate. </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="search-results.html">Wedding Vendors</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Wedding Tips</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bottom Navigation (Mobile/Tablet) -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav__item nav-home">
+            <span class="bottom-nav__icon"><i class="bi bi-house-door-fill"></i></span>
+            <span class="bottom-nav__label">Home</span>
+        </a>
+        <a href="search-results.html" class="bottom-nav__item nav-vendors">
+            <span class="bottom-nav__icon"><i class="bi bi-gem"></i></span>
+            <span class="bottom-nav__label">Vendors</span>
+        </a>
+        <a href="gallery.html" class="bottom-nav__item nav-gallery">
+            <span class="bottom-nav__icon"><i class="bi bi-images"></i></span>
+            <span class="bottom-nav__label">Gallery</span>
+        </a>
+        <a href="faqs.html" class="bottom-nav__item nav-faqs">
+            <span class="bottom-nav__icon"><i class="bi bi-question-circle-fill"></i></span>
+            <span class="bottom-nav__label">FAQs</span>
+        </a>
+        <a href="contact.html" class="bottom-nav__item nav-contact">
+            <span class="bottom-nav__icon"><i class="bi bi-telephone-fill"></i></span>
+            <span class="bottom-nav__label">Contact</span>
+        </a>
+    </nav>
+    <!-- ...existing code... -->
+
+     <!-- Breadcrumb -->
+    <section class="breadcrumb mb-0">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="/">Home</a> &gt; <span>Search Result</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="vendor-header" id="search-results">
+        <div class="container">
+            <h2 class="section-title">Search Results</h2>
+            <div id="results-count" style="margin-bottom: 1rem; font-weight: 500;">Showing 3 results</div>
+            <div id="results-list" class="vendor-grid">
+                <div class="vendor-card">
+                    <img src="https://picsum.photos/200/300?random=1" alt="Shutter Bliss Photography" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Shutter Bliss Photography</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Photographer</span>
+                            <span class="badge-city">Mumbai</span>
+                        </div>
+                        <p class="vendor-card-desc">Capturing your moments with love. Specializes in candid and traditional wedding photography.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="https://picsum.photos/200/300?random=2" alt="Mehendi Magic" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Mehendi Magic</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Makeup/Mehendi</span>
+                            <span class="badge-city">Delhi</span>
+                        </div>
+                        <p class="vendor-card-desc">Intricate mehendi and bridal makeup for your special day. Over 10 years of experience in bridal beauty.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="https://picsum.photos/200/300?random=3" alt="Floral Dreams Decor" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Floral Dreams Decor</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Decorator</span>
+                            <span class="badge-city">Bangalore</span>
+                        </div>
+                        <p class="vendor-card-desc">Stunning wedding decorations with a floral touch. Transforming venues into magical spaces.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="https://picsum.photos/200/300?random=4" alt="Elegant Ensembles" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Elegant Ensembles</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Bridal Designer</span>
+                            <span class="badge-city">Hyderabad</span>
+                        </div>
+                        <p class="vendor-card-desc">Designer bridal wear collections for every tradition. Custom fittings and exclusive designs.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="https://picsum.photos/200/300?random=5" alt="DJ Rhythm" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">DJ Rhythm</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Music & DJs</span>
+                            <span class="badge-city">Pune</span>
+                        </div>
+                        <p class="vendor-card-desc">Bollywood and wedding DJ specialist. Keeps your guests dancing all night long!</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="https://picsum.photos/200/300?random=6" alt="Grand Venues" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Grand Venues</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Wedding Venue</span>
+                            <span class="badge-city">Chennai</span>
+                        </div>
+                        <p class="vendor-card-desc">Spacious and beautiful wedding venues for every budget. Indoor and outdoor options available.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="https://picsum.photos/200/300?random=7" alt="Royal Caterers" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Royal Caterers</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Caterer</span>
+                            <span class="badge-city">Kolkata</span>
+                        </div>
+                        <p class="vendor-card-desc">Traditional and modern wedding feasts. Custom menus and live counters for your guests.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <!-- Add these vendor-card blocks inside your #results-list .vendor-grid -->
+                <div class="vendor-card">
+                    <img src="https://picsum.photos/200/300?random=8" alt="Royal Caterers" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Royal Caterers</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Caterer</span>
+                            <span class="badge-city">Kolkata</span>
+                        </div>
+                        <p class="vendor-card-desc">Traditional and modern wedding feasts. Custom menus and live counters for your guests.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="https://picsum.photos/200/300?random=9" alt="Inviting Moments" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Inviting Moments</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Invitation Designer</span>
+                            <span class="badge-city">Delhi</span>
+                        </div>
+                        <p class="vendor-card-desc">Personalized wedding invitations with traditional and modern designs.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/cake.jpg" alt="Sweet Bliss Cakes" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Sweet Bliss Cakes</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Cake Artist</span>
+                            <span class="badge-city">Bangalore</span>
+                        </div>
+                        <p class="vendor-card-desc">Custom wedding cakes and desserts for every celebration.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/jewellery.jpg" alt="Heritage Jewels" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Heritage Jewels</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Jewellery</span>
+                            <span class="badge-city">Jaipur</span>
+                        </div>
+                        <p class="vendor-card-desc">Exquisite bridal jewellery sets for every tradition and style.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/groom.jpg" alt="The Groom's Studio" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">The Groom's Studio</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Groom Wear</span>
+                            <span class="badge-city">Ahmedabad</span>
+                        </div>
+                        <p class="vendor-card-desc">Designer sherwanis and Indo-western outfits for the modern groom.</p>
+                        <a href="vender-single.html" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/mehandiartist.jpg" alt="Henna Harmony" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Henna Harmony</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Mehendi Artist</span>
+                            <span class="badge-city">Lucknow</span>
+                        </div>
+                        <p class="vendor-card-desc">Beautiful mehendi designs for brides and guests. Natural henna used.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/band.jpg" alt="Royal Band Baja" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Royal Band Baja</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Wedding Band</span>
+                            <span class="badge-city">Delhi</span>
+                        </div>
+                        <p class="vendor-card-desc">Traditional wedding bands for baraat and celebrations. Book for a grand entry!</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/car.jpg" alt="Classic Car Rentals" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Classic Car Rentals</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Car Rentals</span>
+                            <span class="badge-city">Mumbai</span>
+                        </div>
+                        <p class="vendor-card-desc">Vintage and luxury cars for your wedding day arrival and departure.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/fireworks.jpg" alt="Sparkle Fireworks" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Sparkle Fireworks</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Fireworks</span>
+                            <span class="badge-city">Hyderabad</span>
+                        </div>
+                        <p class="vendor-card-desc">Dazzling fireworks displays for your wedding night. Safe and spectacular!</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/planner.jpg" alt="Dream Day Planners" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Dream Day Planners</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Wedding Planner</span>
+                            <span class="badge-city">Goa</span>
+                        </div>
+                        <p class="vendor-card-desc">End-to-end wedding planning and coordination for a stress-free celebration.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/lighting.jpg" alt="Illumin8 Lighting" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Illumin8 Lighting</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Lighting Decor</span>
+                            <span class="badge-city">Bangalore</span>
+                        </div>
+                        <p class="vendor-card-desc">Ambient and decorative lighting for every wedding theme and venue.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/photo_booth.jpg" alt="Fun Booths" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Fun Booths</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Photo Booth</span>
+                            <span class="badge-city">Pune</span>
+                        </div>
+                        <p class="vendor-card-desc">Interactive photo booths with props and instant prints for your guests.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/choreographer.jpg" alt="Dance Dynasty" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Dance Dynasty</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Choreographer</span>
+                            <span class="badge-city">Chandigarh</span>
+                        </div>
+                        <p class="vendor-card-desc">Sangeet and wedding choreography for all ages and styles.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/makeup.jpg" alt="Glow Up Studio" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Glow Up Studio</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Makeup Artist</span>
+                            <span class="badge-city">Surat</span>
+                        </div>
+                        <p class="vendor-card-desc">Professional bridal makeup and hair styling for your big day.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/mandap.jpg" alt="Mandap Magic" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Mandap Magic</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Mandap Decorator</span>
+                            <span class="badge-city">Nagpur</span>
+                        </div>
+                        <p class="vendor-card-desc">Traditional and modern mandap setups for every culture and theme.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/transport.jpg" alt="Elite Transport" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Elite Transport</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Transport</span>
+                            <span class="badge-city">Delhi</span>
+                        </div>
+                        <p class="vendor-card-desc">Luxury buses and cars for wedding guest transport and logistics.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/bar.jpg" alt="Cheers Bar Services" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Cheers Bar Services</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Bar Services</span>
+                            <span class="badge-city">Goa</span>
+                        </div>
+                        <p class="vendor-card-desc">Professional bar setup and bartenders for your wedding parties.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/entertainment.jpg" alt="Star Entertainment" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Star Entertainment</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Entertainment</span>
+                            <span class="badge-city">Mumbai</span>
+                        </div>
+                        <p class="vendor-card-desc">Live bands, celebrity artists, and performers for your wedding events.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/gift.jpg" alt="Gift Gallery" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Gift Gallery</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Wedding Gifts</span>
+                            <span class="badge-city">Indore</span>
+                        </div>
+                        <p class="vendor-card-desc">Unique and personalized wedding gifts for guests and family.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <img src="images/vendors/photobooth2.jpg" alt="Snap Studio" class="vendor-card-img">
+                    <div class="vendor-card-body">
+                        <h3 class="vendor-card-title">Snap Studio</h3>
+                        <div class="vendor-card-badges">
+                            <span class="badge-type">Photo Booth</span>
+                            <span class="badge-city">Bhopal</span>
+                        </div>
+                        <p class="vendor-card-desc">Creative photo booth experiences with instant sharing and prints.</p>
+                        <a href="#" class="vendor-card-btn">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div id="pagination" style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem;">
+                <button style="padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid #ddd; background: #f7c948; font-weight: bold;">1</button>
+                <button style="padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid #ddd; background: #fff;">2</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Templates Preview -->
+    <section class="social-templates" id="social">
+        <div class="container">
+            <h2 class="section-title">Social Media Design System</h2>
+            <p class="section-subtitle">Cohesive Haldi-themed templates for Instagram, Facebook, and all social platforms</p>
+            
+            <div class="template-grid">
+                <div class="template-card">
+                    <div class="template-preview">
+                        <span>💍 Quote Posts</span>
+                    </div>
+                    <div class="template-info">
+                        <h4>Inspirational Quote Templates</h4>
+                        <p>Elegant Haldi backgrounds with white text overlays featuring wedding wisdom and love quotes.</p>
+                    </div>
+                </div>
+                
+                <div class="template-card">
+                    <div class="template-preview">
+                        <span>⭐ Vendor Spotlight</span>
+                    </div>
+                    <div class="template-info">
+                        <h4>Vendor of the Week</h4>
+                        <p>Showcase featured vendors with gradient frames and traditional motifs in our signature color palette.</p>
+                    </div>
+                </div>
+                
+                <div class="template-card">
+                    <div class="template-preview">
+                        <span>⏰ Wedding Countdown</span>
+                    </div>
+                    <div class="template-info">
+                        <h4>Countdown Templates</h4>
+                        <p>Exciting countdown posts with mandap silhouettes and Haldi gradient backgrounds for engaged couples.</p>
+                    </div>
+                </div>
+                
+                <div class="template-card">
+                    <div class="template-preview">
+                        <span>💬 Client Reviews</span>
+                    </div>
+                    <div class="template-info">
+                        <h4>Testimonial Graphics</h4>
+                        <p>Beautiful review cards with client photos, traditional borders, and our signature Haldi-white styling.</p>
+                    </div>
+                </div>
+                
+                <div class="template-card">
+                    <div class="template-preview">
+                        <span>🎯 Bride Picks</span>
+                    </div>
+                    <div class="template-info">
+                        <h4>Curated Selections</h4>
+                        <p>Highlight trending vendors and services with elegant ring motifs and gradient overlays.</p>
+                    </div>
+                </div>
+                
+                <div class="template-card">
+                    <div class="template-preview">
+                        <span>📱 Story Templates</span>
+                    </div>
+                    <div class="template-info">
+                        <h4>Instagram Stories</h4>
+                        <p>Interactive story templates with polls, stickers, and swipe-up features in brand colors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VowVibes</h3>
+                    <p>Your trusted partner in creating unforgettable wedding celebrations. Connecting couples with authentic vendors who understand tradition and excellence.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/>" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="http://linkedin.com/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>For Couples</h3>
+                    <p><a href="search-results.html">Find Wedding Vendors</a></p>
+                    <p><a href="blog-single.html">Wedding Planning Guide</a></p>
+                    <p><a href="blog-single.html">Real Weddings</a></p>
+                    <p><a href="wedding-budget-calculator.html">Budget Calculator</a></p>
+                    <p><a href="blog-single.html">Wedding Checklist</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>For Vendors</h3>
+                    <p><a href="signup.html">Join VowVibes</a></p>
+                    <p><a href="signin.html">Vendor Login / Signup</a></p>
+                    <p><a href="about-us.html">Why VowVibes</a></p>
+                    <p><a href="vendor-signup.html">Vendor Success Stories</a></p>
+                    <p><a href="vendor-signup.html">Vendor Resources</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p><a href="Privacy-Policy.html">Privacy Policy</a></p>
+                    <p><a href="terms-of-service.html">Terms of Service</a></p>
+                    <p><i class="bi bi-envelope-fill"></i> connect@vowvibes.in</p>
+                    <p><i class="bi bi-telephone-fill"></i> +91 98765 43210</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 VowVibes. All rights reserved. Made with ❤️ for Indian weddings.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 600, // ms, matches your .6s
+            easing: 'ease',
+            once: true
+        });
+    </script>
+</body>
+</html>
